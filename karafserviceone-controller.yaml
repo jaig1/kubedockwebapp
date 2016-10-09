@@ -22,7 +22,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: webapp
+      - name: karaf
         # Uncomment this line to use the public docker hub image
         image: jaig/karafserviceone
         # my own private Container Registry image
