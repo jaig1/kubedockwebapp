@@ -44,5 +44,8 @@ spec:
           # http://kubernetes.io/v1.1/docs/api-reference/v1/definitions.html#_v1_containerport
           # The port exposed by the container
         - containerPort: 8181
+        - containerPort: 1099
+        - containerPort: 8101
+        - containerPort: 44444
           # The port exposed on the host
           # hostPort: 8080
