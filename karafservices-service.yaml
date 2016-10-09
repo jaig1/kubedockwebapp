@@ -16,7 +16,7 @@ spec:
     # The port that this service should serve on, more info here:
   - port: 80
     # The port that should be targeted on the Pods
-    targetPort: 8080
+    targetPort: 8181
   selector:
     app: karafservices
     tier: frontend
