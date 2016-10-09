@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: microservices-contr
+  name: karafserviceone-contr
   # these labels can be applied automatically
   # from the labels in the pod template if not set
   labels:
-    app: microservices
+    app: karafservices
     tier: frontend
 spec:
   replicas: 2
@@ -18,13 +18,13 @@ spec:
   template:
     metadata:
       labels:
-        app: microservices
+        app: karafservices
         tier: frontend
     spec:
       containers:
       - name: webapp
         # Uncomment this line to use the public docker hub image
-        image: jaig/docker-tomcat
+        image: jaig/karafserviceone
         # my own private Container Registry image
         #image: gcr.io/gdg-apps-1090/graphviz-webapp
         resources:
