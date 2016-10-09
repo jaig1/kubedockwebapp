@@ -8,7 +8,7 @@ metadata:
     app: karafservices
     tier: frontend
 spec:
-  replicas: 2
+  replicas: 1
   # these labels can be applied automatically
   # from the labels in the pod template if not set
   # selector:
